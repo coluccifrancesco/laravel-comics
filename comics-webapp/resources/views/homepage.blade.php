@@ -4,13 +4,20 @@
     Laravel DC Comics
 @endsection
 
-@section("content")
-    <h1>Homepage</h1>
+@php
+// Dai file config importo comics
+$comics = config("comics");
 
-    <p>Ecco i magazines</p>
+// "var_dump()" di Laravel
+// dd($comics);
+@endphp
+
+@section("content")
+
+    <img  src="{{ Vite::asset('resources/img/jumbotron.jpg') }}" alt="jumbotron background" class="w-100" id="jumbotron">
 
     {{-- Componente --}}
-    <x-comics-list>
+    {{-- <x-comic-in-grid> --}}
         {{-- Per inserire nel componente ciò che sta tra i due tag: {{ $slot }} oppure {{ $nome-slot }} nel componente --}}
         
         {{-- 
@@ -23,5 +30,41 @@
                 Sottotitolo
             </x-slot:subtitle>
         --}}
-    </x-comics-list>
+    {{-- </x-comic-in-grid> --}}
+
+    <div class="bg-dark p-5 pb-3 position-relative">
+
+        <x-badge>
+            <x-slot:classes>px-4 py-2 blue-bg text-white position-absolute top-0 left-0</x-slot:classes>
+            <x-slot:title>CURRENT SERIES</x-slot:title>
+        </x-badge>
+
+        <div class="row comics-grid mx-auto pt-4 pb-5">
+        
+            @foreach ($comics as $comic)
+        
+            <div class="col-6 col-md-4 col-lg-3 col-xl-2">
+
+                <x-comic-in-grid>
+            
+                    <x-slot:image>{{ $comic["thumb"] }}</x-slot:image>
+                    <x-slot:title>{{ $comic["title"] }}</x-slot:title>
+
+                </x-comic-in-grid>
+
+            </div>
+    
+            @endforeach
+        
+        </div>
+
+        <div class="d-flex justify-content-center align-items-center">
+            <x-badge>
+                <x-slot:classes>px-5 py-2 blue-bg text-white</x-slot:classes>
+                <x-slot:title>Load More</x-slot:title>
+            </x-badge>
+        </div>
+
+    </div>
+
 @endsection

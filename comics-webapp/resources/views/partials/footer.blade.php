@@ -1,3 +1,5 @@
 <footer>
-    <h2>Footer</h2>
+    <x-website-sections></x-website-sections>
+
+    
 </footer>

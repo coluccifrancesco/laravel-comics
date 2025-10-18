@@ -1,11 +1,11 @@
 <header>
 
-    <div class="container-fluid px-3 py-4">
+    <div class="container-fluid px-5 py-4">
         <nav class="d-flex justify-content-between align-items-center">
 
-            <img src="" alt="logo">
+            <img src="{{ Vite::asset('resources/img/dc-logo.png') }}" alt="logo">
 
-            <ul class="list-unstyled d-flex justify-content-center align-items-center gap-2 mb-0">
+            <ul class="list-unstyled d-flex justify-content-center align-items-center gap-3 mb-0">
                 <li><a>CHARACTERS</a></li>
                 <li><a>COMICS</a></li>
                 <li><a>MOVIES</a></li>
