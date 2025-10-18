@@ -1,4 +1,4 @@
-   <div class="w-100 px-5 py-5 blue-bg">
+   <div class="w-100 px-5 py-5 blue-bg z-index-1">
         <ul class="footer-grid-width mx-auto list-unstyled d-none d-lg-flex justify-content-center align-items-center gap-4 mb-0">
             <li>
                 <div class="d-flex justify-content-center align-items-center gap-3">

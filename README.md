@@ -1,6 +1,6 @@
 # Laravel Comics
 
-### Svolgimento
+### Svolgimento ✅
 
 L'obiettivo è replicare il layout di un sito basandoci sullo screenshot!
 
@@ -16,6 +16,6 @@ Creiamo poi una rotta per visualizzare la lista di tutti i fumetti recuperati da
 
 Creare più pagine istituzionali che condividono lo stesso layout
 
-### Bonus 2
+### Bonus 2 ✅
 
 Creare uno o più componenti da condividere tra le varie pagine

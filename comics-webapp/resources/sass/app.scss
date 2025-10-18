@@ -48,3 +48,52 @@ html{
 .footer-grid-width{
     max-width: 1000px;
 }
+
+.footer-bg-img{
+    background-image: url(../img/footer-bg.jpg);
+}
+
+.footer-logo-img{
+    height: 400px;
+    margin: -50px 0;
+    overflow: hidden;
+}
+
+.footer-lists{
+
+    ul{
+        margin-bottom: 0;
+
+        li{
+
+            h2{
+                color: white;
+            }
+
+            p{
+                color: rgb(133, 133, 133);
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+.bottom-links{
+    background-color: rgb(73, 73, 73);
+
+    div{
+
+        button{
+            color: white;
+            border: 3px solid var(--blue);
+            background-color: transparent;
+        }
+
+        div{
+
+            h4{
+                color: var(--blue);
+            }
+        }
+    }
+}
